@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "description": "Aprender a usar json.dump",
+        "status": "done",
+        "createdAt": "2026-05-30T12:00:00",
+        "updatedAt": "2026-05-30T12:30:00"
+    },
+    {
+        "id": 2,
+        "description": "Probar la persistencia de datos",
+        "status": "in-progress",
+        "createdAt": "2026-05-30T15:00:00",
+        "updatedAt": "2026-05-30T15:00:00"
+    }
+]
