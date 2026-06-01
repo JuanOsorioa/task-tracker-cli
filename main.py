@@ -1,19 +1,18 @@
 import sys
+from tasks import add_task
 
 def main():
-    argument = sys.argv[1:] 
+    argument = sys.argv[1:]
     if not argument:
         print("ERROR: You must type arguments")
         return
     command = argument[0]
-
     if command == "add":
-        def create_task (name_task):
-            name_task = argument[1]
-            
+        description = " ".join(argument[1:]).strip()
+        if not description:
+            print("ERROR: You must provide a description for the task")
+            return
+        add_task(description)
 
-        
-    else:
-        print(f"Comando desconocido: {command}" )
 if __name__ == "__main__":
     main()
