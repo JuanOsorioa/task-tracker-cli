@@ -20,3 +20,25 @@ def add_task(description):
     tasks_list.append(new_task) #Add new task to task_list
     save_tasks(tasks_list) #Send tasks list to json
     print(f"Task saved with ID {new_id}")
+
+
+def update_task(task_id, new_description=None, new_status=None):
+    tasks_list = load_tasks()
+    for task in tasks_list:
+        if task["id"] == task_id:
+            if new_description:
+                task["description"] = new_description
+                if new_status:
+                    task["status"] = new_status
+            break
+    save_tasks(tasks_list)
+
+
+def delete_task(task_id):
+    tasks_list = load_tasks()
+    tasks_list = [task for task in tasks_list if task["id"] != task_id]
+    save_tasks(tasks_list)
+
+
+def list_tasks():
+    return load_tasks()

@@ -1,23 +1,23 @@
 [
     {
         "id": 1,
-        "description": "hola",
-        "status": "todo",
-        "createdAt": "2026-06-01T15:38:27.854039",
-        "updatedAt": "2026-06-01T15:38:27.854039"
+        "description": "presentar el powerpoint",
+        "status": "to-do",
+        "createdAt": "2026-06-16T15:29:29.862756",
+        "updatedAt": "2026-06-16T15:29:29.862756"
     },
     {
         "id": 2,
-        "description": "comprar salchichas",
-        "status": "todo",
-        "createdAt": "2026-06-01T15:39:27.608561",
-        "updatedAt": "2026-06-01T15:39:27.608561"
+        "description": "learn PostgreSQL",
+        "status": "in-progress",
+        "createdAt": "2026-06-16T15:45:53.920824",
+        "updatedAt": "2026-06-16T15:45:53.920824"
     },
     {
         "id": 3,
-        "description": "Crear nueva funcionalidad",
-        "status": "todo",
-        "createdAt": "2026-06-01T15:40:03.851446",
-        "updatedAt": "2026-06-01T15:40:03.851446"
+        "description": "lavar cocina",
+        "status": "done",
+        "createdAt": "2026-06-16T15:47:32.120739",
+        "updatedAt": "2026-06-16T15:47:32.120739"
     }
 ]
