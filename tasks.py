@@ -28,8 +28,8 @@ def update_task(task_id, new_description=None, new_status=None):
         if task["id"] == task_id:
             if new_description:
                 task["description"] = new_description
-                if new_status:
-                    task["status"] = new_status
+            if new_status:
+                task["status"] = new_status
             break
     save_tasks(tasks_list)
 
@@ -42,3 +42,8 @@ def delete_task(task_id):
 
 def list_tasks():
     return load_tasks()
+
+def list_tasks_by_status(status):
+    tasks_list = load_tasks()
+    filtered_tasks = [task for task in tasks_list if task["status"] == status]
+    return filtered_tasks
